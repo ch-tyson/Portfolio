@@ -3,38 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Tyson's personal website" />
     <meta name="keywords" content="Developer" />
+    <meta name="theme-color" content="#141414">
+    <link rel="icon" type="image/x-icon" href="/EdPortfolio/favicon_io/favicon.ico">
     <title>Tyson's Portfolio</title>
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asul&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asul&display=swap');
+    </style>
+    <script src="app.js"></script>
 </head>
 
-<body>
-    <section>
-        <div class="container">
+<body onload="init()">
+    <main>
+        <h1 class="intro">Hello! My name is Tyson.<span> |</span></h1>
+        <p class="paragraph">
+            I'm an undergraduate Computer Science student at the University
+            of Maryland, College Park, fascinated with emerging
+            technologies.
+        </p>
+        <p>
+            I'm currently exploring web development, data science &
+            analytics, machine-learning, and cyber-security.
+        </p>
 
-            <div class="content">
-                <h1 class="title">Hello! My name is Tyson.</h1>
-                <p class="paragraph">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio facere officia recusandae
-                    labore quasi obcaecati accusantium praesentium provident ratione porro suscipit atque in fugit
-                    incidunt, placeat ex perspiciatis? Ex, inventore?
-                </p>
-            </div>
-
-            <div class="sm-link">
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-            </div>
-
+        <div class="sm-link">
+            <a href="#" class="fa fa-envelope"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-github"></a>
         </div>
-    </section>
+    </main>
 </body>
 
 </html>

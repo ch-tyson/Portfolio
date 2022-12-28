@@ -1,15 +1,92 @@
-p {
+* {
+    transition: all 500ms ease;
+    cursor: crosshair;
+    overflow:hidden;
+  }
 
-    color: black;
+html body {
+    font-family: 'Asul', sans-serif;
+    background-color: #141414;
+    color: white;
+    opacity: 85%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    padding:0;
+}
+
+main {
+    margin: 0 auto;
+    padding: 120px 0 20px 0;
+    max-width: 60%;
+  }
+
+.intro {
+    font-size: 41px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 3s steps(60, end);
+}
+
+.intro span {
+    animation: blink 1s infinite;
+    color: #AF69EF;
+}
+
+p {
+    font-size: 1.1rem;
+    word-spacing: 0.2rem;
+    line-height: 1.6rem;
+    box-sizing: border-box;
 }
 
 .fa {
     padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    font-size: 2rem;
+    width: 2rem;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    color: white;
-    background-color: black;
+    color: #AF69EF;
+    background-color: white;
+    list-style: none;
+}
+
+.sm-link {
+    padding-top: 35px;
+    gap: 1rem;
+    display:flex;
+    justify-content:center;
+}
+
+@keyframes blink {
+    to {
+        opacity:.0;
+    }
+}
+
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+      padding: 20px;
+      max-width: 100%;
+    }
+    .intro {
+      font-size: 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    .sm-link {
+        display:grid;
+    }
 }
