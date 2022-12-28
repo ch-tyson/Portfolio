@@ -7,7 +7,7 @@
 html body {
     font-family: 'Asul', sans-serif;
     background-color: #141414;
-    color: white;
+    color: ghostwhite;
     opacity: 85%;
     height: 100%;
     width: 100%;
@@ -32,9 +32,16 @@ main {
   animation: type 3s steps(60, end);
 }
 
-.intro span {
+.cursor {
     animation: blink 1s infinite;
-    color: #AF69EF;
+    color: #9198e5;
+}
+
+.web-dev {
+    background: linear-gradient(to right, #9198e5, #de91e5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: transparent;
 }
 
 p {
@@ -45,22 +52,49 @@ p {
 }
 
 .fa {
-    padding: 20px;
-    font-size: 2rem;
-    width: 2rem;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 1.5rem;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-    color: #AF69EF;
-    background-color: white;
+    background-color: ghostwhite;
+    opacity: 85%;
     list-style: none;
+    transition:all .25s ease;
+}
+
+.fa:hover {
+	padding: 22px;
+    width: 1.5rem;
+	cursor: pointer;
+}
+
+.fa-envelope {
+    color: #9c91e5;
+}
+
+.fa-linkedin {
+    color: #b191e5;
+}
+
+.fa-instagram {
+    color: #cd91e5;
+}
+
+.fa-github {
+    color: #e591d8;
 }
 
 .sm-link {
     padding-top: 35px;
-    gap: 1rem;
+    gap: 2rem;
     display:flex;
     justify-content:center;
+}
+
+.color-change {
+    animation: hue-shift 7s infinite alternate;
 }
 
 @keyframes blink {
@@ -72,6 +106,14 @@ p {
 @keyframes type {
     from {
         width: 0;
+    }
+}
+
+@keyframes hue-shift {
+    from {
+        filter: hue-rotate(0);
+    } to {
+        filter: hue-rotate(360deg);
     }
 }
 
