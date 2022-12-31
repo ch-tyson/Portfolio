@@ -52,18 +52,5 @@ function SmoothScroll(target, speed, smooth) {
 		else
 			moving = false
 	}
-
-	var requestFrame = function() { // requestAnimationFrame cross browser
-		return (
-			window.requestAnimationFrame ||
-			window.webkitRequestAnimationFrame ||
-			window.mozRequestAnimationFrame ||
-			window.oRequestAnimationFrame ||
-			window.msRequestAnimationFrame ||
-			function(func) {
-				window.setTimeout(func, 1000 / 50);
-			}
-		);
-	}()
 }
 

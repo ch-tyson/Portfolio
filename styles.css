@@ -1,17 +1,12 @@
 * {
     transition: all 500ms ease;
     cursor: crosshair;
-    overflow:hidden;
   }
 
 html body {
-    font-family: 'Asul', sans-serif;
-    background-color: #141414;
-    color: ghostwhite;
-    opacity: 85%;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+    color: #121314;
 }
 
 body {
@@ -19,17 +14,18 @@ body {
 }
 
 main {
-    margin: 0 auto;
+    margin: auto;
     padding: 120px 0 20px 0;
-    max-width: 60%;
+    max-width: 56%;
   }
 
-.intro {
-    font-size: 41px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-  animation: type 3s steps(60, end);
+#intro {
+    font-size: calc(2rem + 0.33vw);
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 4s steps(60, end);
 }
 
 .cursor {
@@ -45,28 +41,55 @@ main {
 }
 
 p {
-    font-size: 1.1rem;
-    word-spacing: 0.2rem;
-    line-height: 1.6rem;
+    font-size: 1.4em;
+    font-weight: 300;
     box-sizing: border-box;
 }
 
+#outside {
+    padding-bottom: 0.5rem;
+}
+
+.resume-button {
+    display: grid;
+    margin: auto;
+    padding: .5rem;
+    border-radius: 1em;
+    border: 1px solid #121314;
+    width: 10rem;
+    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.resume-button:hover {
+    background-image: linear-gradient(to left, #9c91e5, #e591d8);
+    width: 12rem;
+    color: #fff;
+}
+
+.resume-link {
+    text-decoration: none;
+}
+
 .fa {
-    padding: 15px;
-    font-size: 1.5rem;
-    width: 1.5rem;
+    padding: 8px;
+    font-size: 1.2rem;
+    width: 1.4rem;
     text-align: center;
     text-decoration: none;
+    border: 1px solid #121314;
     border-radius: 50%;
-    background-color: ghostwhite;
     opacity: 85%;
-    list-style: none;
     transition:all .25s ease;
 }
 
 .fa:hover {
-	padding: 22px;
-    width: 1.5rem;
+	padding: 14px 14px 14px 14px;
+    width: 1.45rem;
 	cursor: pointer;
 }
 
@@ -87,14 +110,14 @@ p {
 }
 
 .sm-link {
-    padding-top: 35px;
+    padding-top: 1.5rem;
     gap: 2rem;
     display:flex;
     justify-content:center;
 }
 
 .color-change {
-    animation: hue-shift 7s infinite alternate;
+    animation: hue-shift 8s infinite alternate;
 }
 
 @keyframes blink {
@@ -127,7 +150,7 @@ p {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 300px) {
     .sm-link {
         display:grid;
     }
