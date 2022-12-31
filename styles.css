@@ -15,8 +15,8 @@ body {
 
 main {
     margin: auto;
-    padding: 120px 0 20px 0;
-    max-width: 56%;
+    padding: 10em 0 15em 0;
+    max-width: 60%;
   }
 
 #intro {
@@ -30,11 +30,11 @@ main {
 
 .cursor {
     animation: blink 1s infinite;
-    color: #9198e5;
+    color: #98b4d4;
 }
 
 .web-dev {
-    background: linear-gradient(to right, #9198e5, #de91e5);
+    background: linear-gradient(to right, #7facdf, #7fdfa9);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: transparent;
@@ -49,6 +49,7 @@ p {
 #outside {
     padding-bottom: 0.5rem;
 }
+
 
 .resume-button {
     display: grid;
@@ -66,7 +67,7 @@ p {
 }
 
 .resume-button:hover {
-    background-image: linear-gradient(to left, #9c91e5, #e591d8);
+    background-image: linear-gradient(to left, #7fdfa9, #7facdf);
     width: 12rem;
     color: #fff;
 }
@@ -94,19 +95,19 @@ p {
 }
 
 .fa-envelope {
-    color: #9c91e5;
+    color: #7fbfdf;
 }
 
 .fa-linkedin {
-    color: #b191e5;
+    color: rgb(127, 201, 223);
 }
 
 .fa-instagram {
-    color: #cd91e5;
+    color: #7fdfd6;
 }
 
 .fa-github {
-    color: #e591d8;
+    color: #7fdfa9;
 }
 
 .sm-link {
@@ -117,13 +118,7 @@ p {
 }
 
 .color-change {
-    animation: hue-shift 8s infinite alternate;
-}
-
-@keyframes blink {
-    to {
-        opacity:.0;
-    }
+    animation: hue-shift 4s infinite alternate;
 }
 
 @keyframes type {
@@ -136,9 +131,10 @@ p {
     from {
         filter: hue-rotate(0);
     } to {
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(90deg);
     }
 }
+
 
 @media (max-width: 768px) {
     main {
